@@ -45,12 +45,12 @@ pip install ttkbootstrap
 
 ### ▶️ روش اجرا (برای توسعه‌دهندگان)
 
-1. فایل `dns_switcher.py` را دانلود کنید.
+1. فایل `main.py` را دانلود کنید.
 2. مطمئن شوید Python و کتابخانه `ttkbootstrap` نصب هستند.
 3. برنامه را اجرا کنید:
 
 ```bash
-pythonw dns_switcher.py
+pythonw main.py
 ```
 
 یا با دوبار کلیک روی فایل `.py`.
@@ -70,15 +70,15 @@ pip install pyinstaller
 2. ساخت فایل اجرایی:
 
 ```bash
-pyinstaller --noconsole --onefile dns_switcher.py
+pyinstaller --noconsole --onefile main.py
 ```
 
-✅ نتیجه: فایل `dns_switcher.exe` در پوشه `dist/`
+✅ نتیجه: فایل `main.exe` در پوشه `dist/`
 
 📌 (اختیاری) افزودن آیکون:
 
 ```bash
-pyinstaller --noconsole --onefile --icon=icon.ico dns_switcher.py
+pyinstaller --noconsole --onefile --icon=icon.ico main.py
 ```
 
 ❗ اگر خطای `hiddenimport` دریافت کردید، این ماژول‌ها را به فایل `.spec` اضافه کنید:
@@ -110,7 +110,7 @@ hiddenimports=[
 * 🧪 **دیباگ:** اگر برنامه اجرا نمی‌شود، نسخه کنسول‌دار را بسازید:
 
 ```bash
-pyinstaller --onefile dns_switcher.py
+pyinstaller --onefile main.py
 ```
 
 ---
@@ -127,6 +127,7 @@ pyinstaller --onefile dns_switcher.py
 این برنامه تحت **لایسنس MIT** منتشر شده است. برای جزئیات، فایل `LICENSE` را بررسی کنید.
 
 ---
+
 
 
 
